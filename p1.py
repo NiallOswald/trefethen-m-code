@@ -1,3 +1,5 @@
+"""p1.py - convergence of fourth-order finite differences"""
+
 import numpy as np
 import scipy.sparse as sp
 import matplotlib.pyplot as plt

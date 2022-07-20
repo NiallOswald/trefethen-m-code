@@ -1,3 +1,5 @@
+"""p2.py - convergence of periodic spectral method (compare p1.py)"""
+
 import numpy as np
 import scipy.linalg as sp
 import matplotlib.pyplot as plt
