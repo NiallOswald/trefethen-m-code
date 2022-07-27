@@ -1,4 +1,4 @@
-# p11 - Chebyshev differentiation of a smooth function
+"""p11.py - Chebyshev differentiation of a smooth function"""
 
 import numpy as np
 from cheb import cheb

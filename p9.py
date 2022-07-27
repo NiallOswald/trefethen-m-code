@@ -1,4 +1,4 @@
-# p9 - polynomial interpolation in equispaced and Chebyshev points
+"""p9.py - polynomial interpolation in equispaced and Chebyshev points"""
 
 import numpy as np
 import matplotlib.pyplot as plt

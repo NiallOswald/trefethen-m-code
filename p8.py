@@ -1,4 +1,4 @@
-# p8 - eigenvalues of harmonic oscillator -u''+x^2 u on R
+"""p8.py - eigenvalues of harmonic oscillator -u''+x^2 u on R"""
 
 import numpy as np
 import scipy.linalg as sp

@@ -1,4 +1,4 @@
-"""p6 - variable coefficient wave equation"""
+"""p6.py - variable coefficient wave equation"""
 
 import numpy as np
 import matplotlib.pyplot as plt

@@ -1,4 +1,4 @@
-"""p4 - periodic spectral differentiation"""
+"""p4.py - periodic spectral differentiation"""
 
 import numpy as np
 import scipy.linalg as sp

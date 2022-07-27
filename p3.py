@@ -1,4 +1,4 @@
-"""p3 - Band-limited interpolation"""
+"""p3.py - Band-limited interpolation"""
 
 import numpy as np
 import matplotlib.pyplot as plt

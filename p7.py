@@ -1,4 +1,4 @@
-# p7 - accuaracy of periodic spectral differentiation
+"""p7.py - accuaracy of periodic spectral differentiation"""
 
 import numpy as np
 import scipy.linalg as sp

@@ -1,4 +1,4 @@
-# p10 - polynomials and corresponding equipotential curves
+"""p10.py - polynomials and corresponding equipotential curves"""
 
 import numpy as np
 import matplotlib.pyplot as plt

@@ -1,4 +1,4 @@
-"""p5 - repetition of p4.py via FFT"""
+"""p5.py - repetition of p4.py via FFT"""
 
 # For complex v, delete "np.real" commands
 
