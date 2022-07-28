@@ -16,4 +16,4 @@ def cheb(n):
     D = (c @ (1 / c).T) / (dX + np.eye(n + 1))
     D = D - np.diag(np.sum(D.T, axis=0))
 
-    return D, x
+    return D, x.T[0]
