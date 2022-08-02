@@ -51,7 +51,7 @@ data_plot = np.tile(template, (n_plots + 1, 1, 1))
 data_plot[:, :, 1] = data[:, :]
 
 # Make plot
-line = LineCollection(data_plot, color="black")
+line = LineCollection(data_plot, color="black", linewidth=0.5)
 ax.add_collection3d(line, zs=t_data, zdir="y")
 ax.set_zticks((0, 2, 4))
 ax.set_xlim(0, 2 * np.pi)
