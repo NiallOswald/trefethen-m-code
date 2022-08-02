@@ -3,7 +3,7 @@
 import numpy as np
 
 
-def chebfft(v):
+def chebfft(v, real=True):
     """Return the derivative of v at the Chebyshev points using the FFT."""
     n = len(v) - 1
     if n == 0:
@@ -13,10 +13,14 @@ def chebfft(v):
     ii = np.arange(0, n)
     V = np.concatenate([v, v[n - 1 : 0 : -1]])  # noqa: N806
 
-    U = np.fft.fft(V).real  # noqa: N806
+    U = np.fft.fft(V)  # noqa: N806
+    if real:
+        U = U.real  # noqa: N806
     W = np.fft.ifft(  # noqa: N806
         1j * np.concatenate([ii, [0], np.arange(1 - n, 0)]) * U
-    ).real
+    )
+    if real:
+        W = W.real  # noqa: N806
 
     w = np.zeros(n + 1)
     w[1:n] = -W[1:n] / np.sqrt(1 - x[1:n] ** 2)
