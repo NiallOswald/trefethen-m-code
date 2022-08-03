@@ -41,10 +41,13 @@ value = uu[n // 4, n // 4]
 
 # Interpolate to a finer grid and plot
 xx, yy = np.meshgrid(x, y)
-x_fine = np.arange(-1, 1.01, 0.04)
+x_fine = np.arange(-1, 1.01, 0.06)
 y_fine = x_fine
 xxx, yyy = np.meshgrid(x_fine, y_fine)
-uuu = sp.interp2d(xx, yy, uu, kind="cubic")(x_fine, y_fine)
+uuu = sp.griddata(
+    (xx.ravel(), yy.ravel()), uu.ravel(), (xxx, yyy), method="cubic"
+)
+# uuu = sp.interp2d(xx, yy, uu, kind="cubic")(x_fine, y_fine)
 
 fig = plt.figure(figsize=(8, 4))
 ax = fig.add_subplot(projection="3d")
