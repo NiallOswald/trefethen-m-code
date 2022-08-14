@@ -3,7 +3,7 @@
 import numpy as np
 import scipy.linalg as la
 import scipy.special as sp
-from spectral_shs import cheb
+from cheb import cheb
 import matplotlib.pyplot as plt
 
 for n in range(12, 49, 12):
